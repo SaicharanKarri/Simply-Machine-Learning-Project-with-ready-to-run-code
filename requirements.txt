@@ -2,3 +2,5 @@ pandas
 scikit-learn
 playsound3
 six
+tensorflow
+ultralytics
