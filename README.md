@@ -21,18 +21,15 @@ To ensure the code runs without errors, we use a virtual environment. Think of t
 ### 1. Create the Environment
 We use Conda to manage our Python versions and packages.
 
-Bash
 conda create -n ml python=3.12.11
 
 ### 2. Activate the Environment
 
-Bash 
 conda activate ml
 
 ### 3. Install Dependencies
 Install all necessary libraries with a single command:
 
-Bash
 pip install -r requirements.txt
 
 🏃 How to Run the Scripts
@@ -41,20 +38,17 @@ This repository is divided into three main stages: Data Generation, Training, an
 ## Phase 1: Generate Data
 Create your dataset locally by specifying the number of samples you need.
 
-Bash
 python datagenerate.py --num_samples <desired_num_samples>
 
 ## Phase 2: Train the Model
 Point the trainer to your data path to begin the learning process.
 
-Bash
 python train.py --data_path <path_to_the_data>
 
 ## Phase 3: Test & Predict
 
 Run the interactive test script. The system will prompt you for input to determine the result (e.g., "Right Swipe" or not).
 
-bash
 python test.py
 
 ## 📂 Repository Structure
